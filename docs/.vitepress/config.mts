@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "tlpy",
   description: "tlpy-Anki-Document",
+  base: '/tlpy-Anki-Document/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
