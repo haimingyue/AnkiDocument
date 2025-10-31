@@ -15,16 +15,20 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '逃离平庸',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '一页一书', link: '/book-on-page' },
+          { text: '推荐的50本书', link: '/recommand-50-books' },
         ]
       }
     ],
+    // nav导航栏 左边的logo旁边的文字
+    siteTitle: '逃离平庸',
+    // 网站左上角的logo图标
+    logo: '/logo.png',
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ]
   }
 })

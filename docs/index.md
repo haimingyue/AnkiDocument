@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "逃离平庸"
-  text: "欢迎来到桃李平庸"
-  tagline: My great project tagline
+  text: "欢迎来到逃离平庸"
+  tagline: 进行中的书籍 - Make it stick
   actions:
     - theme: brand
       text: 一页一书
