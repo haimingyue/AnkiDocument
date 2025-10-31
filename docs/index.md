@@ -3,23 +3,23 @@
 layout: home
 
 hero:
-  name: "tlpy"
-  text: "tlpy-Anki-Document"
+  name: "逃离平庸"
+  text: "欢迎来到桃李平庸"
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 一页一书
+      link: /book-on-page
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 推荐的50本书
+      link: /recommand-50-books
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+# features:
+#   - title: Feature A
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature B
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature C
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
