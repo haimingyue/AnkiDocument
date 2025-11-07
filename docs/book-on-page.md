@@ -1,31 +1,32 @@
+---
+title: 我的思维导图与视频资源
+---
+
 # 这里是我做过的思维导图
 
-历史思维导图：https://pan.baidu.com/s/1VnVw3brvIMBUIOmC1NcpCg?pwd=qyvt 提取码: qyvt 
+- **历史思维导图**：[点击下载](https://pan.baidu.com/s/1VnVw3brvIMBUIOmC1NcpCg?pwd=qyvt) 提取码: qyvt
+- **Effective Notetaking 书籍资源**：[点击下载](https://pan.baidu.com/s/1kd5It9PtoouiTJpcoQvT8Q?pwd=tlpy)
 
-Effective Notetaking书籍资源：https://pan.baidu.com/s/1kd5It9PtoouiTJpcoQvT8Q?pwd=tlpy
-
-
-网站维护中，以后会方便一点，可以直接下载。
-
+> 网站维护中，未来将提供更方便的下载方式。
 
 ---
-title: Bilibili 视频资源
----
 
-## 视频展示
-
-### 使用 Vue 组件和 Flex 布局显示视频
-
-<div class="video-container">
-  <div class="video-item" v-for="(video, index) in videos" :key="index">
-    <div class="cover" :style="{ backgroundImage: `url(${video.cover})` }">
-      <a :href="video.link" target="_blank">
-        <button class="play-button">播放</button>
-      </a>
+<template>
+  <div class="video-container">
+    <div class="video-item" v-for="(video, index) in videos" :key="index">
+      <h3 class="video-title">{{ video.title }}</h3>
+      <iframe
+        :src="video.link"
+        width="100%"
+        height="400"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen="true"
+      ></iframe>
+      <p>{{ video.description }}</p>
     </div>
-    <div class="video-title">{{ video.title }}</div>
   </div>
-</div>
+</template>
 
 <script setup>
 import { ref } from 'vue'
@@ -33,55 +34,44 @@ import { ref } from 'vue'
 // 定义视频数据
 const videos = ref([
   {
-    title: 'Vue在Markdown中的使用',
-    link: 'https://www.bilibili.com/video/BV1ZD2PBoEYV/?vd_source=cc8b5013d5350bcc125428d714a405e4',
-    cover: 'https://www.example.com/cover1.jpg', // 视频封面图片链接
+    title: '从来没有人教你怎么做笔记对吗？今天是一个好的开始 ｜ Effective Notetaking',
+    link: 'https://player.bilibili.com/player.html?bvid=BV1ZD2PBoEYV',
+    description: '这段视频讲解了如何做好笔记，帮助你在学习中更加高效。',
   },
   {
-    title: 'VitePress 实战应用',
-    link: 'https://www.bilibili.com/video/BV1mP17BkEi5/?vd_source=cc8b5013d5350bcc125428d714a405e4',
-    cover: 'https://www.example.com/cover2.jpg', // 视频封面图片链接
+    title: '在学习中，怎样避免自我安慰和自我欺骗 ｜ Make it Stick',
+    link: 'https://player.bilibili.com/player.html?bvid=BV1mP17BkEi5',
+    description: '视频中介绍了学习过程中的常见陷阱，并提出了避免自我安慰和自我欺骗的策略。',
   },
-  // 添加更多视频...
+  // 你可以继续添加更多的视频数据...
 ])
 </script>
 
 <style scoped>
 .video-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* 视频之间的间距 */
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .video-item {
-  width: 250px;
   text-align: center;
 }
 
-.cover {
-  width: 100%;
-  height: 150px; /* 可以调整封面的高度 */
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-radius: 8px;
-}
-
-.play-button {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-}
-
 .video-title {
-  margin-top: 10px;
+  font-size: 18px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
 }
 </style>
