@@ -12,22 +12,6 @@ Effective Notetaking书籍资源：https://pan.baidu.com/s/1kd5It9PtoouiTJpcoQvT
 title: Bilibili 视频资源
 ---
 
-# Bilibili 视频资源
-
-在这里，我整理了一些与VitePress相关的教学视频，希望能对你有所帮助！
-
-## 视频 1：Vue在Markdown中的使用
-
-[点击观看](https://www.bilibili.com/video/BV1ZD2PBoEYV/?vd_source=cc8b5013d5350bcc125428d714a405e4)
-
-这段视频讲解了如何在Markdown中使用Vue进行动态模板、组件引入等高级功能，适合希望深入了解VitePress和Vue集成的开发者。
-
-## 视频 2：VitePress 实战应用
-
-[点击观看](https://www.bilibili.com/video/BV1mP17BkEi5/?vd_source=cc8b5013d5350bcc125428d714a405e4)
-
-这段视频带你走一遍VitePress的实战应用，从基础的Markdown语法到动态页面渲染，帮助你更好地理解VitePress的实际运用。
-
 ## 视频展示
 
 ### 使用 Vue 组件和 Flex 布局显示视频
