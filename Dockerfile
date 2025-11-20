@@ -22,6 +22,8 @@
     COPY --from=build /app/docs/.vitepress/dist /usr/share/nginx/html
     COPY nginx.conf /etc/nginx/nginx.conf
     
-    EXPOSE 80
+    # 现在这个容器会监听 80 和 443
+    EXPOSE 80 443
+    
     CMD ["nginx","-g","daemon off;"]
     
